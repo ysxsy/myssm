@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace必须写对应mapper接口的全类名 -->
+<mapper namespace="LoginMapper">
+
+
+	<select id="findByCondition" parameterType="String" resultType="pd">
+		select YOYO_ID,NICKNAME,PHONE,SEX,LEVEL_VALUE,HEAD 
+		from USER
+		WHERE
+		YOYO_ID=#{YOYO_ID}
+	</select>
+</mapper>

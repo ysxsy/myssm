@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+*{margin: 0;padding: 0;font-family: "微软雅黑";font-size: 16px;}
+
+body{background-color: #f0f5f5;}
+
+.container{margin: 0;padding: 0;
+min-width: 1200px; 
+width:expression(document.body.clientWidth < 1200px? "1200px": "auto" );}
+
+a:LINK{text-decoration: none;color: black;}
+a:HOVER {color: red;}
+
+.head{background-image: url("../imgs/pay/navigation.png");width: 100%;height: 92px;clear: both;}
+
+.logo{float: left;height: 92px;width: 120px;margin-right: 2px;}
+.logo img{height:60px;width: 60px;margin-top: 12.5px;margin-left: 50%;}
+
+.text{float: left;width: 53%;}
+.text span{font-size: 20px;line-height: 92px;}
+.text a{font-size: 16px;margin: 5% 5%;}
+
+.login{float: right;width: 35%;}
+.login a{line-height: 92px;font-size: 16px;margin-left: 70%;}
+
+.logined{float:right;width:35%;height: 92px;display: none;}
+.logined .head1{width: 52px;height: 52px;border-radius:26px;line-height: 92px;margin-left: 40%;vertical-align: middle;}
+.logined span{color: #333333;font-size: 16px;line-height: 92px;margin-right: 1%;}
+.logined .xia{width: 17px;height: 10px;}
+.logined #loginout{position: relative;margin-left: 64%;margin-top: -30px;display: none;}
+
+#loginout button:HOVER{background-color:#0033FF;}
+
+.content{margin:51px 92px;margin-right:120px; background-color: white;}
+
+.span{background-color: #f0f5f5;height: 46px;}
+.span button {width: 154px;height: 46px;border: none;background-color: white;}
+
+
+.uninformation{width: 100%;height: 182px;clear: both;}
+.uninfor1 {float: left;margin-top: 70px;margin-left:50px; }
+.uninfor1 img{width: 82px;border-radius:41px;}
+.uninfor2 {float: left;margin-left: 10px;margin-top: 89px;font-size: 12px;}
+.uninfor2 a{font-size: 12px;color: #4dd2ff;}
+.uninfor2 span{font-size: 13px;}
+.uninfor3{float: right;margin-top: 124px;margin-right: 40px;font-size: 12px;}
+.uninfor3 a{font-size: 12px;color: #4dd2ff;}
+
+.zuan hr{margin-left: 2%;margin-right: 2%;margin-bottom:30px; border-top:1px solid #f0f5f5;}
+.zuan table{margin-left: 30px;padding-bottom: 30px;}
+.zuan td{width: 123px;height: 83px;padding-left: 63px;padding-right: 63px;padding-top: 30px;}
+.zuan span{margin: 60px;}
+
+.gold{display: none;}
+.gold hr{margin-left: 2%;margin-right: 2%;margin-bottom:30px; border-top:1px solid #f0f5f5;}
+.gold table{margin-left: 30px;padding-bottom: 30px;}
+.gold td{width: 123px;height: 83px;padding-left: 63px;padding-right: 63px;padding-top: 30px;}
+.gold span{margin: 60px;}
+
+.pay span{margin: 60px;}
+.pay div{margin-left: 60px;margin-top: 44px;margin-bottom: 44px;}
+.pay button{width: 141px;height: 44px;margin-right:92px; }
+.pay .weipay{background-image: url("../imgs/pay/unweipay.png");}
+.pay .zhipay{background-image: url("../imgs/pay/unzhipay.png");}
+
+
+.last{clear:both;height: 90px;padding-bottom: 56px;}
+.last hr{margin-left: 2%;margin-right: 2%;margin-bottom:44px; border-top:1px solid #f0f5f5;}
+.last .last_left{width: 147px;height: 46px;margin-left: 60px;float: left;margin-right: 60px;vertical-align:bottom;display:table-cell;}
+.last .last_right{background-color: #c0c0c0;width: 147px;height: 46px;float: right;margin-right: 40px;text-align: center;}
+.last .last_left #amount{width: 30px;height:31px; font-size: 18px;}
+.last .last_right #commit1{font-size: 16px;line-height:46px; }
+.last .last_right #commit2{font-size: 16px;line-height:46px; }
+
+.footer{padding-bottom:40px;  text-align: center;font-size: 12px;width: 50%;padding-left: 25%;}
+.footer a{font-size: 12px;color: #949494;}
+.footer span{font-size: 12px;color: #949494; }

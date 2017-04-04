@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL Map Config 3.0//EN"  
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- mybatis全局配置 -->
+	<settings>
+	 	<setting name="cacheEnabled" value="true" /><!-- 全局映射器启用缓存 --> 
+	 	<setting name="useGeneratedKeys" value="true" /> 
+        <setting name="defaultExecutorType" value="REUSE" />  
+	</settings>
+	<typeAliases>
+		<typeAlias type="cn.ssm.until.PageData" alias="pd"/>
+		<typeAlias type="cn.ssm.po.User" alias="User"/>
+		<typeAlias type="cn.ssm.po.PayOrder" alias="PayOrder"/>
+		<!-- 分页 -->
+		<typeAlias type="cn.ssm.po.Page" alias="Page"/>
+	</typeAliases>
+</configuration>

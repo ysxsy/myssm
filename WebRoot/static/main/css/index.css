@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+*{color: white;padding: 0;margin: 0;}
+/* div{border-width: 2px;border-color: white;border-style: solid;} */
+
+
+*{margin: 0;padding: 0;}
+.bg{position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;background-size:cover; }
+.container{margin: 0;padding: 0;
+min-width: 1200px; 
+width:expression(document.body.clientWidth < 1200px? "1200px": "auto" );
+ }
+
+.head{margin-top: 50px;padding-bottom: 140px;}
+.head_right{float: right; line-height: 40px;margin-right: 5%;}
+.logo{float: left;margin-left: 5%;}
+.log img{width: 146px;height: 40px;}
+a:LINK{text-decoration: none;}
+a:HOVER {color: red;}
+
+.content{line-height: 90px;font-size: 90px;padding-bottom: 200px;}
+.con_left{float: left;margin-left: 20%;}
+.con_right{float: right;margin-right: 20%;}
+
+.load{width: 100%;height: 50px;}
+.an{float: left;margin-left: 23.5%;width:11%;}
+.ios{float: left;margin-left: 10%;width:11%;}
+.code{float: left;margin-left: 10%;width:11%;}
+.codeqr{float: left;margin-left:0.2%; width:160px;height: 160px;text-align: center;}
+
+
+.footer{padding-bottom:10px;  text-align: center;font-size: 12px;width: 50%;padding-left: 25%;}
+
+
+}
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace必须写对应mapper接口的全类名 -->
+<mapper namespace="PayOrderMapper">
+
+
+<!-- appid;
+body;
+device_info;
+mch_id;nonce_str;notify_url;openId;out_trade_no;spbill_create_ip;total_fee;trade_type;product_id;
+sign; -->
+
+	<select id="get" parameterType="String" resultType="PayOrder">
+		select 	APPID;
+				BODY,
+				DEVICE_INFO,
+				MCH_ID,
+				NONCE_STR,
+				NOTIFY_URL,
+				OPENID,
+				OUT_TRADE_NO,
+				SPBILL_CREATE_IP,
+				TOTAL_FEE,
+				TRADE_TYPE,
+				PRODUCT_ID,
+				SIGN, 
+		from PayOrder
+		WHERE
+		OUT_TRADE_NO=#{OUT_TRADE_NO}
+	</select>
+</mapper>
